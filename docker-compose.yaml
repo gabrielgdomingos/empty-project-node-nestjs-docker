@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  node:
+    build: .
+    image: node-nestjs-app
+    container_name: 'node'
+    tty: true
+    #entrypoint: .docker/entrypoint.sh
+    ports:
+      - 3000:3000
+    volumes:
+      - ./:/home/node/app

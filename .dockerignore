@@ -1,0 +1,10 @@
+# O arquivo .dockerignore é usado apenas no build da imagem
+# Após iniciar o container, todos os arquivos estarão espelhados
+
+.docker
+.dockerignore
+docker-compose.yaml
+Dockerfile
+
+#node_modules
+#rest
